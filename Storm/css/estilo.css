@@ -1,0 +1,76 @@
+body{
+
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+.wrapper{
+	
+	width: 989px;
+	margin: auto;
+	
+}
+
+.wrapper-header{
+	
+	width: 989px;
+	margin: auto;
+	
+	
+}
+
+
+
+.menu{
+	
+	background-color: black;
+	border-radius: 4px;
+	list-style: none;
+	color: white;
+	width: 100%;
+	padding: 0;
+	height: auto;
+		
+}
+
+
+.menu li{
+	
+	display: inline-block;
+	height: auto;
+	width: 13%;
+	text-align: center;
+
+}
+
+.menu #logo{
+	
+	display: inline;
+	width: 30%;
+	height: auto;
+	margin-left: 1%;
+	
+}
+
+.secao1{
+	
+	height: 550px;
+	background-color: #2677b2;
+	
+}
+
+.secao2{
+	
+	height: 900px;
+	background-color: #161616;
+	
+}
+
+footer{
+	
+	height: 650px;
+	background-color: #213f5b;
+	
+}
