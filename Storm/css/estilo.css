@@ -3,54 +3,88 @@ body{
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
+	color: white;
+	font-size: 15px;
+	font-family: adobe garamond pro;
+		
+}
+
+p{
+	
+	
+	
+}
+
+h4{
+	
+	font-size: 17px;
 	
 }
 
 .wrapper{
 	
-	width: 989px;
+	width: 986px;
 	margin: auto;
 	
 }
 
-.wrapper-header{
+.noticias{
 	
-	width: 989px;
+	width: 932px;
 	margin: auto;
-	
 	
 }
 
+.fim{
+	
+	width: 932px;
+	margin: auto;
+	
+}
 
-
-.menu{
+.nav{
 	
 	background-color: black;
 	border-radius: 4px;
 	list-style: none;
-	color: white;
+	color: #cecece;
 	width: 100%;
+	height: 56px;
 	padding: 0;
-	height: auto;
+	display: flex;
+	padding-left:20px;
+	padding-right: 20px;
+	font-family: Trebuchet MS;
+	font-size: 14px;
 		
 }
 
 
-.menu li{
+.nav li{
 	
-	display: inline-block;
-	height: auto;
-	width: 13%;
+	display: inline;
+	width: 100%;
+	height: 100%;
 	text-align: center;
+	line-height: 4em;
 
 }
 
-.menu #logo{
+.nav li:hover{
+	
+	border-bottom: 4px solid #fff001;
+	
+	
+}
+
+.nav #logo{
 	
 	display: inline;
-	width: 30%;
-	height: auto;
+	width: 100%;
+	height: 100%;
 	margin-left: 1%;
+	margin-right: 63px;
+	padding-top: 10px;
 	
 }
 
@@ -58,6 +92,7 @@ body{
 	
 	height: 550px;
 	background-color: #2677b2;
+	margin: 0px;
 	
 }
 
@@ -65,12 +100,168 @@ body{
 	
 	height: 900px;
 	background-color: #161616;
+	padding-top: 90px;
+	padding-bottom: 30px;
+	margin: 0px;
+		
+}
+
+article{
+	
+	width: 576px;
+	height: auto;
+	display: flex;
+		
+}
+
+aside{
+
+	width: 84px;
+	height: 242px;
+	border: 1px solid #274c6c;
+	margin-left: 5px;
+	margin-top: 120px;
+		
+}
+
+#social{
+	
+	width: auto;
+	height: auto;
+	border-bottom: 1px solid #274c6c;
+	margin: 14px 12px 0px 12px;
+	padding-bottom: 12px;
+	
+}
+
+#social #face{
+	
+	margin-left: 5px;
+	
+}
+
+#social #twitter{
+	
+	margin-left: 1px;
+	
+}
+
+#navegador{
+	
+	text-align: center;
+	
+}
+
+#navegador img{
+	
+	display: block;
+	margin-top: 16px;
+	margin-bottom: 8.5px;
+	margin-left: 23px;
+	
+}
+
+figure{
+	
+	margin: auto;
+	
+}
+
+article #informacao{
+	
+	width: 465px;
+	margin: auto;
+	padding: auto;
+	
+}
+
+#legenda{
+	
+	font-size: 0.6em;
+	
+}
+#side{
+	
+	width: 100%;
+	margin-top: 33.3px;
+	margin-left: 14.5px;
+	padding-left: 22.2px;
+	padding-top: 28px;
+	font-size: 13px;
+	
+}
+
+#side ul{
+	
+	list-style: none;
+	
+}
+
+figcaption{
+	
+	font-size: 10px;
+	
+}
+
+.noticias{
+	
+	display: flex;
+	margin: auto;
 	
 }
 
 footer{
 	
+	margin: 0px;
 	height: 650px;
 	background-color: #213f5b;
+	
+}
+
+
+.wrapper #mensagem{
+	
+	width: 647px;
+	margin: auto;
+	font-size: 22px;
+	text-align: center;
+	padding-top: 106.4px;
+	
+}
+
+.contatos{
+	
+	display: flex;
+	margin-top: 65px;
+	margin-left: 25.5px;
+	
+	
+}
+
+.formulario p{
+	
+	font-size: 17px;
+	
+}
+
+.formulario input{
+	
+	width: auto;
+	
+}
+
+.formulario, .endereco{
+	
+	width: 100%;
+	
+}.endereco p{
+	
+	font-size: 16px;
+	
+}
+
+.endereco .cidade{
+	
+	font-size: 18px;
 	
 }
