@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel = "stylesheet" href = "css/estilo.css">
+		<script src = "js/scripts.js"></script>
 		
     </head>
     <body>
@@ -29,31 +30,31 @@
 						
 						</li>
 						
-						<li>
+						<li class = "itemMenu">
 								
 							Conheça a Storm
 								
 						</li>
 								
-						<li>
+						<li class = "itemMenu">
 								
 							Portifólio
 								
 						</li>
 								
-						<li>
+						<li class = "itemMenu">
 								
 							Produtos
 								
 						</li>
 								
-						<li>
+						<li class = "itemMenu">
 								
 							Clipping
 								
 						</li>
 								
-						<li>
+						<li class = "itemMenu">
 								
 							Faça Contato
 								
@@ -74,7 +75,7 @@
 				
 					<article>
 					
-						<div id = "informacao">
+						<div class = "noticia not1" id = "not1">
 					
 							<h4>PEQUENAS EMPRESAS GRANDES NEGÓCIOS<h4>
 							<p>Ex-hacker brasileiro projeta miniaviões para encontrar carros roubados, vigiar fazendas e gerenciar o trânsito</p>
@@ -91,20 +92,26 @@
 						
 						</div>	
 						
+						<div class = "noticia not2" id = "not2">
+						</div>
+						
+						<div class = "noticia not3" id = "not3">
+						</div>
+						
 						<aside>
 						
 							<div id = "social">
 							
-								<img src = "img/faceIcon.png" id = "face">
-								<img src = "img/twitterIcon.png" id = "twitter">
+								<a href = "#"><img src = "img/faceIcon.png" id = "face"></a>
+								<a href = "#"><img src = "img/twitterIcon.png" id = "twitter"></a>
 							
 							</div>
 							
 							<div id = "navegador">
 							
-								<img src = "img/proxDir.png">
-								Próximo
-								<img src = "img/proxEsq.png">
+								<input type = "image" src = "img/proxDir.png" id = "prox" onClick = "prox();">
+								<label for = "prox">Próximo
+								<input type = "image" src = "img/proxEsq.png" onClick = "ant();">
 								Anterior
 							
 							</div>
@@ -116,9 +123,9 @@
 					<nav id = "side">
 					
 						<ul>
-							<li>O GLOBO BLOGS - INIVAÇÃO</li>
-							<li>PEQUENAS EMPRESAS GRANDES NEGÓCIOS</li>
-							<li>REVISTA GALILEU</li>
+							<li id = "ama1">O GLOBO BLOGS - INOVAÇÃO</li>
+							<li id = "ama2">PEQUENAS EMPRESAS GRANDES NEGÓCIOS</li>
+							<li id = "ama3">REVISTA GALILEU</li>
 						</ul>						
 					
 					</nav>
@@ -137,15 +144,15 @@
 					
 				<div class = "contatos">
 				
-					<div class = "formulario">
+					<form class = "formulario">
 						
 						<p>Mande sua mensagem</p>
-						<p><input type = "text"></p>
-						<p><input type = "email"></p>
-						<p><input type = "textarea"></p>
-						<button>ENVIAR</button>
+						<p><input type = "text" required placeholder = "seu nome" class = "entrada"></p>
+						<p><input type = "email" required placeholder = "seu email" class = "entrada"></p>
+						<textarea required placeholder = "sua mensegem"></textarea>
+						<p><input type = "image" src = "img/botao.png"></p>
 					
-					</div>
+					</form>
 					
 					<div class = "endereco">
 					

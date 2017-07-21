@@ -67,12 +67,13 @@ h4{
 	height: 100%;
 	text-align: center;
 	line-height: 4em;
-
+	
 }
 
-.nav li:hover{
+.nav .itemMenu:hover{
 	
 	border-bottom: 4px solid #fff001;
+	padding-bottom: -4px;
 	
 	
 }
@@ -121,6 +122,7 @@ aside{
 	border: 1px solid #274c6c;
 	margin-left: 5px;
 	margin-top: 120px;
+	background: rgba(39,76, 108, 0.3);
 		
 }
 
@@ -131,7 +133,7 @@ aside{
 	border-bottom: 1px solid #274c6c;
 	margin: 14px 12px 0px 12px;
 	padding-bottom: 12px;
-	
+		
 }
 
 #social #face{
@@ -149,10 +151,10 @@ aside{
 #navegador{
 	
 	text-align: center;
-	
+		
 }
 
-#navegador img{
+#navegador input{
 	
 	display: block;
 	margin-top: 16px;
@@ -167,11 +169,23 @@ figure{
 	
 }
 
-article #informacao{
+article .noticia{
 	
 	width: 465px;
 	margin: auto;
 	padding: auto;
+	
+}
+
+#not2, #not3{
+	
+	display: none;
+	
+}
+
+#ama1{
+	
+	color: yellow;
 	
 }
 
@@ -238,15 +252,35 @@ footer{
 	
 }
 
+.formulario{
+	
+	background-color: #213e5a;
+	
+}
+
 .formulario p{
 	
 	font-size: 17px;
 	
 }
 
-.formulario input{
+textarea, .entrada{
 	
-	width: auto;
+	width: 420px;
+	background-color: #e4f2fd;
+	border-radius: 5px;
+	
+}
+
+.entrada{
+	
+	height: 37px;
+	
+}
+
+textarea{
+	
+	height: 113px;
 	
 }
 
