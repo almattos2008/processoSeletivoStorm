@@ -1,0 +1,50 @@
+.carrossel ul{
+	
+	list-style: none;
+	
+}
+
+.carrossel img{
+	
+	overflow: hidden;
+	width: 100%;
+	
+}
+
+.imgCarrossel {
+   animation: cycle 25s linear infinite;
+}
+
+@keyframes cycle {
+   0%  { top: 0px; } /* When you start the slide, the first image is already visible */
+   4%  { top: 0px; } /* Original Position */
+   16% { top: 0px; opacity:1; z-index:0; } /* From 4% to 16 % = for 3 seconds the image is visible */
+   20% { top: 325px; opacity: 0; z-index: 0; } /* From 16% to 20% = for 1 second exit image */
+   21% { top: -325px; opacity: 0; z-index: -1; } /* Return to Original Position */
+   92% { top: -325px; opacity: 0; z-index: 0; }
+   96% { top: -325px; opacity: 0; } /* From 96% to 100% = for 1 second enter image*/
+   100%{ top: 0px; opacity: 1; }
+}
+
+.carrossel input{
+	
+	#margin-top: 180px;
+	position: absolute;
+	z-index: 9999;
+	top: 270px;
+	position: absolute;
+	
+}
+
+.carrossel #dir{
+	
+	right: 200px;
+		
+}
+
+
+.carrossel #esq{
+	
+	left: 240px;
+	
+}

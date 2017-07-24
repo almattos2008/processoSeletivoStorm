@@ -1,4 +1,5 @@
-var valor = 1
+var valor = 1;
+var controle = false;
 
 function prox(){
 	
@@ -36,22 +37,22 @@ function prox(){
 		case 1:
 			document.getElementById("not3").style.display = "none";
 			document.getElementById("not1").style.display = "block";
-			document.getElementById("ama3").style.color = "white";
-			document.getElementById("ama1").style.color = "yellow";
+			document.getElementById("ama3").style.color = "#fefefe";
+			document.getElementById("ama1").style.color = "#fff001";
 		break;
 		
 		case 2:
 			document.getElementById("not1").style.display = "none";
 			document.getElementById("not2").style.display = "block";
-			document.getElementById("ama1").style.color = "white";
-			document.getElementById("ama2").style.color = "yellow";	
+			document.getElementById("ama1").style.color = "#fefefe";
+			document.getElementById("ama2").style.color = "#fff001";	
 		break;
 		
 		case 3:
 			document.getElementById("not2").style.display = "none";
 			document.getElementById("not3").style.display = "block";
-			document.getElementById("ama2").style.color = "white";
-			document.getElementById("ama3").style.color = "yellow";
+			document.getElementById("ama2").style.color = "#fefefe";
+			document.getElementById("ama3").style.color = "#fff001";
 		break;
 	
 	
@@ -93,24 +94,135 @@ function ant(){
 		case -3:
 			document.getElementById("not2").style.display = "none";
 			document.getElementById("not1").style.display = "block";
-			document.getElementById("ama2").style.color = "white";
-			document.getElementById("ama1").style.color = "yellow";
+			document.getElementById("ama2").style.color = "#fefefe";
+			document.getElementById("ama1").style.color = "#fff001";
 		break;
 		
 		case -2:
 			document.getElementById("not3").style.display = "none";
 			document.getElementById("not2").style.display = "block";
-			document.getElementById("ama3").style.color = "white";
-			document.getElementById("ama2").style.color = "yellow";	
+			document.getElementById("ama3").style.color = "#fefefe";
+			document.getElementById("ama2").style.color = "#fff001";	
 		break;
 		
 		case -1:
 			document.getElementById("not1").style.display = "none";
 			document.getElementById("not3").style.display = "block";
-			document.getElementById("ama1").style.color = "white";
-			document.getElementById("ama3").style.color = "yellow";
+			document.getElementById("ama1").style.color = "#fefefe";
+			document.getElementById("ama3").style.color = "#fff001";
 		break;
 	
 	
 }
+
 }
+
+function drop(){
+	
+	var menu = document.getElementById("dropDown");
+	
+	if (controle == false){
+		
+		menu.style.display = "block";	
+		controle = true;
+		
+	} else{
+		
+		menu.style.display = "none";	
+		controle = false;
+		
+	}
+		
+		
+	
+	
+	
+	
+	
+}
+
+function muda(num){
+	
+	switch (num){
+	
+		case 1:
+			document.getElementById("not3").style.display = "none";
+			document.getElementById("not2").style.display = "none";
+			document.getElementById("not1").style.display = "block";
+			document.getElementById("ama3").style.color = "#fefefe";
+			document.getElementById("ama2").style.color = "#fefefe";
+			document.getElementById("ama1").style.color = "#fff001";
+			valor = 1;
+		break;
+		
+		case 2:
+			document.getElementById("not1").style.display = "none";
+			document.getElementById("not3").style.display = "none";
+			document.getElementById("not2").style.display = "block";
+			document.getElementById("ama1").style.color = "#fefefe";
+			document.getElementById("ama3").style.color = "#fefefe";
+			document.getElementById("ama2").style.color = "#fff001";	
+			valor = 2;
+		break;
+		
+		case 3:
+			document.getElementById("not2").style.display = "none";
+			document.getElementById("not1").style.display = "none";
+			document.getElementById("not3").style.display = "block";
+			document.getElementById("ama2").style.color = "#fefefe";
+			document.getElementById("ama1").style.color = "#fefefe";
+			document.getElementById("ama3").style.color = "#fff001";
+			valor = 3;
+		break;
+	
+	
+}
+	
+}
+
+
+function selecao(){
+	
+	var sele = parseInt(document.getElementById("selResp").value);
+	
+	switch (sele){
+	
+		case 1:
+			document.getElementById("not3").style.display = "none";
+			document.getElementById("not2").style.display = "none";
+			document.getElementById("not1").style.display = "block";
+			document.getElementById("ama3").style.color = "#fefefe";
+			document.getElementById("ama2").style.color = "#fefefe";
+			document.getElementById("ama1").style.color = "#fff001";
+			valor = 1;
+		break;
+		
+		case 2:
+			document.getElementById("not1").style.display = "none";
+			document.getElementById("not3").style.display = "none";
+			document.getElementById("not2").style.display = "block";
+			document.getElementById("ama1").style.color = "#fefefe";
+			document.getElementById("ama3").style.color = "#fefefe";
+			document.getElementById("ama2").style.color = "#fff001";	
+			valor = 2;
+		break;
+		
+		case 3:
+			document.getElementById("not2").style.display = "none";
+			document.getElementById("not1").style.display = "none";
+			document.getElementById("not3").style.display = "block";
+			document.getElementById("ama2").style.color = "#fefefe";
+			document.getElementById("ama1").style.color = "#fefefe";
+			document.getElementById("ama3").style.color = "#fff001";
+			valor = 3;
+		break;
+	
+	
+}
+	
+	
+	
+}
+
+
+
